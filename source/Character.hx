@@ -537,6 +537,24 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+				
+				case 'tails':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/Tails');
+				frames = tex;
+				animation.addByPrefix('idle', 'Tails IDLE', 24);
+				animation.addByPrefix('singUP', 'Tails UP', 24);
+				animation.addByPrefix('singRIGHT', 'Tails RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Tails DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Tails LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 		}
 
 		dance();
